@@ -1,20 +1,8 @@
 {
+  "extends": "../../tsconfig.build.json",
   "compilerOptions": {
-    "target": "es2018",
-    "module": "commonjs",
-    "lib": ["esnext"],
-    "esModuleInterop": true,
-    "isolatedModules": true,
-    "sourceMap": true,
-    "declaration": true,
-
-    "strict": true,
-    "noImplicitAny": false,
-    "noUncheckedIndexedAccess": false,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "useUnknownInCatchVariables": false,
-    "skipDefaultLibCheck": true
+    "outDir": "declaration",
+    "emitDeclarationOnly": true
   },
-  "exclude": ["**/dist", "**/node_modules", "**/src/__tests__"]
+  "include": ["src/runtime"]
 }
